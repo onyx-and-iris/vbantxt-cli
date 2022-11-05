@@ -31,7 +31,7 @@ A valid `config.toml` might look like this:
 ```toml
 [connection]
 Host="gamepc.local"
-Port=6990
+Port=6980
 Streamname="Command1"
 ```
 
