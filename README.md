@@ -1,3 +1,6 @@
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
 # VBAN Sendtext CLI Utility
 
 VBAN sendtext cli utility for sending Voicemeeter string requests over a network.
@@ -15,7 +18,7 @@ VBAN sendtext cli utility for sending Voicemeeter string requests over a network
 
 ## `Use`
 
-#### Command Line
+#### `Command Line`
 
 Pass `host`, `port` and `streamname` as flags, for example:
 
@@ -32,13 +35,17 @@ Port=6990
 Streamname="Command1"
 ```
 
-#### Script files
+#### `Script files`
 
 The vbantxt-cli utility accepts a single string request or an array of string requests. This means you can pass scripts stored in files.
 
 For example, in Windows with Powershell you could:
 
 `vbantxt-cli $(Get-Content .\script.txt)`
+
+Or with Bash:
+
+`cat script.txt | xargs vbantxt-cli`
 
 to load commands from a file:
 
