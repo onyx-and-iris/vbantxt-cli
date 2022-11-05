@@ -1,4 +1,4 @@
-# vbantxt
+# VBAN Sendtext CLI Utility
 
 VBAN sendtext cli utility for sending Voicemeeter string requests over a network.
 
