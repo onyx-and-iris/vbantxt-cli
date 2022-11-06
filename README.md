@@ -54,7 +54,7 @@ Or with Bash:
 to load commands from a file:
 
 ```
-strip[0].mute=0;strip[0].mute=0
-strip[1].mono=0;strip[1].mono=0
-bus[3].eq.On=1
+strip[0].mute=1;strip[0].mono=0
+strip[1].mute=0;strip[1].mono=1
+bus[3].eq.On=0
 ```
