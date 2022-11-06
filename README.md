@@ -3,7 +3,7 @@
 
 # VBAN Sendtext CLI Utility
 
-VBAN sendtext cli utility for sending Voicemeeter string requests over a network.
+Send Voicemeeter string requests over a network.
 
 ## Tested against
 
@@ -14,15 +14,17 @@ VBAN sendtext cli utility for sending Voicemeeter string requests over a network
 ## Requirements
 
 -   [Voicemeeter](https://voicemeeter.com/)
--   Go 1.18 or greater
+-   Go 1.18 or greater (if you want to compile yourself, otherwise check `Releases`)
 
-## `Use`
+---
 
-#### `Command Line`
+## `Command Line`
 
 Pass `host`, `port` and `streamname` as flags, for example:
 
-`vbantxt-cli -h="gamepc.local" -p=6980 -s=Command1 "strip[0].mute=1 strip[1].mono=1"`
+```
+vbantxt-cli -h="gamepc.local" -p=6980 -s=Command1 "strip[0].mute=1 strip[1].mono=1"
+```
 
 You may also store them in a `config.toml` located in `home directory / .vbantxt_cli /`
 
@@ -35,7 +37,9 @@ Port=6980
 Streamname="Command1"
 ```
 
-#### `Script files`
+---
+
+## `Script files`
 
 The vbantxt-cli utility accepts a single string request or an array of string requests. This means you can pass scripts stored in files.
 
@@ -52,4 +56,5 @@ to load commands from a file:
 ```
 strip[0].mute=0;strip[0].mute=0
 strip[1].mono=0;strip[1].mono=0
+bus[3].eq.On=1
 ```
